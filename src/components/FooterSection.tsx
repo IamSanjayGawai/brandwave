@@ -203,6 +203,8 @@ const FooterSection = () => {
       >
         <ArrowUp size={20} />
       </motion.button>
+
+      <span>Design And Developed By:  SG</span>
     </footer>
   );
 };
