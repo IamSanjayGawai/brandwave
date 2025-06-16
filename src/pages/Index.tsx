@@ -6,6 +6,7 @@ import ServicesSection from '../components/ServicesSection';
 import TrustedClientsSection from '../components/TrustedClientsSection';
 import OurWorkSection from '../components/OurWorkSection';
 import FooterSection from '../components/FooterSection';
+import SocialMediaPackage from '@/components/SocialMediaPackage';
 
 const Index = () => {
   return (
@@ -26,6 +27,9 @@ const Index = () => {
       <TrustedClientsSection />
       <div id="work">
         <OurWorkSection />
+      </div>
+      <div id='package'>
+        <SocialMediaPackage/>
       </div>
       <div id="contact">
         <FooterSection />

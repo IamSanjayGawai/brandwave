@@ -20,6 +20,7 @@ const Navbar = () => {
     { name: 'About', href: '#about' },
     { name: 'Services', href: '#services' },
     { name: 'Work', href: '#work' },
+    { name: 'Package', href: '#package' },
     { name: 'Contact', href: '#contact' },
   ];
 

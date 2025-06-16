@@ -94,7 +94,7 @@ const FooterSection = () => {
                  <img
               src="/logo.png"
               alt="Brandwave Logo"
-              className="h-20 w-full object-contain"
+              className="h-20 w-40 object-contain "
             />
             <h3 className="text-2xl font-bold text-brandwave-white font-sora mt-4">
                   BrandWave Studio LLP

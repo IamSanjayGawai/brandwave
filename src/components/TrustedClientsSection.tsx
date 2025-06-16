@@ -10,18 +10,36 @@ const TrustedClientsSection = () => {
 
   // Mock client logos - in real implementation, these would be actual logo images
   const clients = [
-    { name: 'TechCorp', logo: '🚀' },
-    { name: 'InnovateAI', logo: '🤖' },
-    { name: 'GreenEnergy', logo: '🌱' },
-    { name: 'FinanceFlow', logo: '💳' },
-    { name: 'HealthTech', logo: '⚕️' },
-    { name: 'EduSphere', logo: '🎓' },
-    { name: 'RetailMax', logo: '🛍️' },
-    { name: 'FoodieHub', logo: '🍕' },
-    { name: 'TravelNow', logo: '✈️' },
-    { name: 'SportsPro', logo: '⚽' },
-    { name: 'MusicWave', logo: '🎵' },
-    { name: 'ArtSpace', logo: '🎨' }
+    { name: 'TechCorp', logo: '/clients/1.png' },
+    { name: 'InnovateAI', logo: '/clients/2.png' },
+    { name: 'GreenEnergy', logo: '/clients/3.png' },
+    { name: 'FinanceFlow', logo: '/clients/4.png' },
+    { name: 'HealthTech', logo: '/clients/5.png' },
+    { name: 'EduSphere', logo: '/clients/6.png' },
+    { name: 'RetailMax', logo: '/clients/7.png' },
+    { name: 'FoodieHub', logo: '/clients/8.png' },
+    { name: 'TravelNow', logo: '/clients/9.png' },
+    { name: 'SportsPro', logo: '/clients/10.png' },
+    { name: 'MusicWave', logo: '/clients/11.png' },
+    { name: 'ArtSpace', logo: '/clients/12.png' },
+    { name: 'MediaWorks', logo: '/clients/13.png' },
+    { name: 'AutoDrive', logo: '/clients/14.png' },
+    { name: 'RealEstateX', logo: '/clients/15.png' },
+    { name: 'FashionTrend', logo: '/clients/16.png' },
+    { name: 'GamingHub', logo: '/clients/17.png' },
+    { name: 'CryptoWorld', logo: '/clients/18.png' },
+    { name: 'LogisticsPro', logo: '/clients/19.png' },
+    { name: 'ConstructionCo', logo: '/clients/20.png' },
+    { name: 'TelecomConnect', logo: '/clients/21.png' },
+    { name: 'LegalWise', logo: '/clients/22.png' },
+    { name: 'ConsultingGroup', logo: '/clients/23.png' },
+    { name: 'NonProfitOrg', logo: '/clients/24.png' },
+    { name: 'GovernmentAgency', logo: '/clients/25.png' },
+    { name: 'HospitalityChain', logo: '/clients/26.png' },
+    { name: 'E-commerceHub', logo: '/clients/27.png' },
+    { name: 'BlockchainTech', logo: '/clients/28.png' },
+    { name: 'CyberSecurity', logo: '/clients/29.png' },
+    { name: 'AI Innovations', logo: '/clients/30.png' }
   ];
 
   // Duplicate the array for seamless loop
@@ -70,15 +88,16 @@ const TrustedClientsSection = () => {
                     scale: 1.1,
                     filter: 'brightness(1.2)',
                   }}
-                  className="group flex-shrink-0 w-48 h-24 bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl border border-gray-700 hover:border-brandwave-red transition-all duration-300 flex items-center justify-center cursor-pointer"
+                  className="group flex-shrink-0 w-48 h-36 bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl border border-gray-700 hover:border-brandwave-red transition-all duration-300 flex items-center justify-center cursor-pointer"
                 >
                   <div className="text-center">
-                    <div className="text-3xl mb-2 transform group-hover:scale-110 transition-transform duration-300">
+                    {/* <div className="text-3xl mb-2 transform group-hover:scale-110 transition-transform duration-300">
                       {client.logo}
                     </div>
                     <div className="text-sm font-semibold text-gray-300 group-hover:text-brandwave-white transition-colors duration-300">
                       {client.name}
-                    </div>
+                    </div> */}
+                    <img src={client.logo} alt={client.name} className="w-full h-full mb-2 transform group-hover:scale-110 transition-transform duration-300" />
                   </div>
                   
                   {/* Hover Glow */}
@@ -111,15 +130,17 @@ const TrustedClientsSection = () => {
                     scale: 1.1,
                     filter: 'brightness(1.2)',
                   }}
-                  className="group flex-shrink-0 w-48 h-24 bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl border border-gray-700 hover:border-brandwave-red transition-all duration-300 flex items-center justify-center cursor-pointer"
+                  className="group flex-shrink-0 w-48 h-36 bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl border border-gray-700 hover:border-brandwave-red transition-all duration-300 flex items-center justify-center cursor-pointer"
                 >
                   <div className="text-center">
-                    <div className="text-3xl mb-2 transform group-hover:scale-110 transition-transform duration-300">
+                    {/* <div className="text-3xl mb-2 transform group-hover:scale-110 transition-transform duration-300">
                       {client.logo}
                     </div>
                     <div className="text-sm font-semibold text-gray-300 group-hover:text-brandwave-white transition-colors duration-300">
                       {client.name}
-                    </div>
+                    </div> */}
+
+                      <img src={client.logo} alt={client.name} className="w-full h-full mb-2 transform group-hover:scale-110 transition-transform duration-300" />
                   </div>
                   
                   {/* Hover Glow */}

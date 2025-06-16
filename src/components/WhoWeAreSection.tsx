@@ -10,24 +10,45 @@ const WhoWeAreSection = () => {
 
   const teamMembers = [
     {
-      name: 'Creative Strategists',
-      description: 'Visionaries who shape your brand story',
+      name: 'Listens to Your Needs',
+      description: 'We hear you, we understand you',
+      icon: '👂'
+    },
+    {
+      name: 'Understands  Vision',
+      description: 'We see your dreams clearly',
+      icon: '👁️'
+    },
+    {
+      name: 'Reaseacrh for You',
+      description: 'We dig deep to find the best solutions',
+      icon: '🔎'
+
+    },
+    {
+      name: 'Think Creative Ideas',
+      description: 'We innovate to bring your brand to life',
       icon: '💡'
     },
-    {
-      name: 'Design Artists',
-      description: 'Craftspeople who bring ideas to life',
-      icon: '🎭'
+        {
+      name: 'Implements Your Ideas',
+      description: 'We turn your concepts into reality',
+      icon: '🔧'
     },
-    {
-      name: 'Digital Innovators',
-      description: 'Tech wizards building digital experiences',
-      icon: '⚡'
+        {
+      name: 'Bussiness Growth',
+      description: 'We identify and seize growth opportunities',
+      icon: '📈'
     },
-    {
-      name: 'Brand Architects',
-      description: 'Master builders of lasting impressions',
-      icon: '🏗️'
+        {
+      name: 'Timely Delievery',
+      description: 'We respect your time and deliver on schedule',
+      icon: '⏰'
+    },
+        {
+      name: 'Helps You Stand Out',
+      description: 'We make your brand unforgettable',
+      icon: '🌟'
     }
   ];
 
@@ -74,7 +95,7 @@ const WhoWeAreSection = () => {
                 <div className="text-sm text-gray-400">Brands Transformed</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-brandwave-red font-sora">8+</div>
+                <div className="text-3xl font-bold text-brandwave-red font-sora">15+</div>
                 <div className="text-sm text-gray-400">Years Experience</div>
               </div>
               <div className="text-center">

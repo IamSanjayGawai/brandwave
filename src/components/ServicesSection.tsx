@@ -13,50 +13,66 @@ const ServicesSection = () => {
 
   const services = [
     {
-      title: 'Design',
-      description: 'Visual identity that speaks volumes',
-      icon: '🎨',
+      title: 'The Spectrum',
+      description: 'A holistic approach to brand transformation',
+      icon: '🌈',
       subServices: [
-        'Brand Identity Design',
-        'Logo & Visual Systems',
-        'Print & Packaging Design',
-        'UI/UX Design'
+        'Brand Strategy',
+        'Brand Architecture',
+        'Brand Identity Development',
+        'Brand Positioning',
+        'Brand Equity Management',
+        'Brand Analysis',
       ],
       gradient: 'from-red-500 to-pink-600'
+    },
+     {
+      title: 'Design',
+      description: 'Creative design that captivates',
+      icon: '🎨',
+      subServices: [
+        'Brochure(Corporate, Product)',
+        'Cofee Table Book',
+        'Print Advertising',
+        'Hoarding and Outdoor Brading',
+        'Sales and Marketing Collateral',
+        'Merchandising',
+        'Stationary - Letterhead, Business Cards, Envelopes',
+        'Exibition Panels',
+
+      ],
+      gradient: 'from-green-500 to-teal-600'
     },
     {
       title: 'Digital',
       description: 'Digital experiences that engage',
       icon: '💻',
       subServices: [
-        'Website Development',
-        'Mobile Applications',
-        'E-commerce Solutions',
-        'Digital Platforms'
+      'Website Design & Development',
+      'SEO(Search Engine Optimization)',
+      'Social Media Management',
+      'Search ENgine Marketing',
+      'Social Media Optimization',
+      'Google Ads',
+      'Google Analytics',
+      'Blog Management',
       ],
       gradient: 'from-blue-500 to-purple-600'
     },
+   
     {
-      title: '360 Media',
-      description: 'Immersive storytelling across all channels',
-      icon: '📱',
-      subServices: [
-        'Video Production',
-        'Photography',
-        'Motion Graphics',
-        'Interactive Media'
-      ],
-      gradient: 'from-green-500 to-teal-600'
-    },
-    {
-      title: 'Planning & Buying',
+      title: '360 Media, Planning & Buying',
       description: 'Strategic media placement and optimization',
       icon: '📊',
       subServices: [
-        'Media Strategy',
-        'Campaign Planning',
-        'Performance Analytics',
-        'Budget Optimization'
+         'TVC',
+        'Radio Jingles',
+        'Outdoor Advertising',
+        'Print Media',
+        'In Store',
+        'Digital',
+        'BTL',
+        'Events & Exhibitions',
       ],
       gradient: 'from-orange-500 to-red-600'
     }

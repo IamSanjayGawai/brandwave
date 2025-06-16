@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { ChevronDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   const { ref, inView } = useInView({
@@ -70,8 +71,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-4xl md:text-6xl lg:text-7xl font-bold font-sora leading-tight"
           >
-            Riding the Wave of{' '}
-            <span className="gradient-text">Creative Brilliance</span>
+            Hum <span className="gradient-text">Logo</span> ke Liye Kaam Karte Hai
           </motion.h1>
           
           <motion.p
@@ -80,7 +80,7 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="text-xl md:text-2xl text-gray-300 font-light max-w-3xl mx-auto"
           >
-            Designing impact, delivering influence.
+            Designing & Digital Agency
           </motion.p>
 
           <motion.div
@@ -94,7 +94,7 @@ const HeroSection = () => {
               whileTap={{ scale: 0.95 }}
               className="group relative px-12 py-4 bg-brandwave-red text-brandwave-white font-semibold text-lg rounded-full overflow-hidden transition-all duration-300 hover:bg-opacity-90"
             >
-              <span className="relative z-10">Explore Our Work</span>
+              <a href="#work"><span className="relative z-10">Explore Our Work</span></a>
               <motion.div
                 className="absolute inset-0 bg-gradient-to-r from-brandwave-red to-red-600"
                 initial={{ x: '-100%' }}
