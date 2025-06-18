@@ -105,16 +105,18 @@ const FooterSection = () => {
               </div>
               
               <div className="space-y-2">
-                <p className="text-gray-300">
-                  <span className="text-brandwave-red font-semibold">Email:</span> brandwave49@gmail.com
+                   <p className="text-gray-300">
+                  <span className="text-brandwave-red font-semibold">Address:</span> Excella Spaces, Elite Brookland, off Balewadi High Street, Balewadi, Pune - 411045, India
                 </p>
-                <p className="text-gray-300">
+                 <p className="text-gray-300">
                   <span className="text-brandwave-red font-semibold">Phone:</span> +91 9579471645 | +91 8380805500
                 </p>
                 <span className="text-gray-300">Pune | Mumbai | Banglore</span>
+             
                 <p className="text-gray-300">
-                  <span className="text-brandwave-red font-semibold">Address:</span> Excella Spaces, Elite Brookland, off Balewadi High Street, Balewadi, Pune - 411045, India
+                  <span className="text-brandwave-red font-semibold">Email:</span> brandwave49@gmail.com
                 </p>
+               
               </div>
             </motion.div>
 
