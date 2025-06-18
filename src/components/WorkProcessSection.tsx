@@ -140,7 +140,7 @@ const WorkProcessSection = () => {
 
             {/* Icon with scroll animation */}
             <motion.div 
-              className="text-4xl mb-4"
+              className="text-6xl mb-4"
               whileHover={{ 
                 scale: 1.2, 
                 rotate: 360,
@@ -155,7 +155,7 @@ const WorkProcessSection = () => {
             
             {/* Number with advanced animation */}
             <motion.div 
-              className="text-6xl md:text-7xl font-bold text-red-500 opacity- mb-4 font-mono"
+              className="text-6xl md:text-8xl font-bold text-red-500 opacity- mb-4 font-mono"
               whileHover={{ opacity: 1, scale: 1.1 }}
               animate={{
                 textShadow: [

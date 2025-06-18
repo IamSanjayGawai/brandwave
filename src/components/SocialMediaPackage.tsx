@@ -120,7 +120,7 @@ const SocialMediaPackage = () => {
                 whileTap={{ scale: 0.95 }}
                 className="w-full bg-gradient-to-r from-red-500 to-red-600 text-white py-4 px-8 rounded-full text-lg font-bold mt-8 shadow-xl hover:from-red-600 hover:to-red-700 transition-all duration-300"
               >
-                Get Started Now
+                Get Now
               </motion.button>
 
               <p className="text-center text-sm mt-6 opacity-80">

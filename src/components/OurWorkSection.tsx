@@ -321,23 +321,7 @@ const OurWorkSection = () => {
         </div>
 
         {/* CTA Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-center mt-20"
-        >
-          <p className="text-lg text-gray-300 mb-8">
-            Ready to see your brand transform?
-          </p>
-          <motion.button
-            whileHover={{ scale: 1.05, boxShadow: "0 0 30px #EF4444" }}
-            whileTap={{ scale: 0.95 }}
-            className="px-12 py-4 bg-red-500 text-white font-semibold text-lg rounded-full transition-all duration-300 hover:bg-red-600"
-          >
-            Start Your Project
-          </motion.button>
-        </motion.div>
+      
       </div>
     </section>
   );

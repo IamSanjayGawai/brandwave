@@ -48,7 +48,7 @@ const FooterSection = () => {
             className="space-y-8"
           >
             <h2 className="text-4xl md:text-6xl font-bold font-sora">
-              Let's Make{' '}
+              Let's Make Succesfull{' '}
               <span className="gradient-text">Waves Together</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
@@ -204,7 +204,7 @@ const FooterSection = () => {
         <ArrowUp size={20} />
       </motion.button>
 
-      <span>Design And Developed By:  SG</span>
+      <span>Design And Developed By:  BeingRambo</span>
     </footer>
   );
 };
