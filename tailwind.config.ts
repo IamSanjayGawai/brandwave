@@ -72,6 +72,7 @@ export default {
 			fontFamily: {
 				'inter': ['Inter', 'sans-serif'],
 				'sora': ['Sora', 'sans-serif'],
+				'now': ['Now', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

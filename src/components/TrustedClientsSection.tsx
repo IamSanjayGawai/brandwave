@@ -54,9 +54,10 @@ const TrustedClientsSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-6xl font-bold font-sora mb-6">
-            Our Trusted{' '}
-            <span className="gradient-text">Clients</span>
+          <h2 className="text-4xl md:text-6xl font-bold font-sora mb-6 ">
+            Our {' '}
+            <span className="gradient-text mr-2">Clients</span>
+            Family
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Partnering with industry leaders to create brands that make waves
@@ -88,7 +89,7 @@ const TrustedClientsSection = () => {
                     scale: 1.1,
                     filter: 'brightness(1.2)',
                   }}
-                  className="group flex-shrink-0 w-48 h-36 bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl border border-gray-700 hover:border-brandwave-red transition-all duration-300 flex items-center justify-center cursor-pointer"
+                  className="group flex-shrink-0 w-32 h-24 md:w-40 md:h-32 lg:w-48 lg:h-36 bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl border border-gray-700 hover:border-brandwave-red transition-all duration-300 flex items-center justify-center cursor-pointer"
                 >
                   <div className="text-center">
                     {/* <div className="text-3xl mb-2 transform group-hover:scale-110 transition-transform duration-300">
@@ -130,7 +131,7 @@ const TrustedClientsSection = () => {
                     scale: 1.1,
                     filter: 'brightness(1.2)',
                   }}
-                  className="group flex-shrink-0 w-48 h-36 bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl border border-gray-700 hover:border-brandwave-red transition-all duration-300 flex items-center justify-center cursor-pointer"
+                  className="group flex-shrink-0 w-32 h-24 md:w-40 md:h-32 lg:w-48 lg:h-36 bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl border border-gray-700 hover:border-brandwave-red transition-all duration-300 flex items-center justify-center cursor-pointer"
                 >
                   <div className="text-center">
                     {/* <div className="text-3xl mb-2 transform group-hover:scale-110 transition-transform duration-300">

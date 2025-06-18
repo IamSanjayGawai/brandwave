@@ -16,7 +16,7 @@ const Navbar = () => {
 
   const navItems = [
     { name: 'Home', href: '#home' },
-    { name: 'Process', href: '#process' },
+    { name: 'Our Process', href: '#process' },
     { name: 'About', href: '#about' },
     { name: 'Services', href: '#services' },
     { name: 'Work', href: '#work' },
@@ -66,13 +66,13 @@ const Navbar = () => {
               </motion.a>
             ))}
             
-            <motion.button
+            <a  href='#contact'><motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-brandwave-red text-brandwave-white px-6 py-2 rounded-full font-inter font-medium hover:bg-brandwave-red/90 transition-colors duration-300"
             >
               Get Started
-            </motion.button>
+            </motion.button></a>
           </div>
 
           {/* Mobile menu button */}
@@ -102,9 +102,9 @@ const Navbar = () => {
                 {item.name}
               </a>
             ))}
-            <button className="w-full mt-4 bg-brandwave-red text-brandwave-white px-6 py-3 rounded-full font-inter font-medium hover:bg-brandwave-red/90 transition-colors duration-300">
+              <a  href='#contact'><button className="w-full mt-4 bg-brandwave-red text-brandwave-white px-6 py-3 rounded-full font-inter font-medium hover:bg-brandwave-red/90 transition-colors duration-300">
               Get Started
-            </button>
+            </button></a>
           </div>
         </motion.div>
       </div>

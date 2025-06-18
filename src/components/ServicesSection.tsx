@@ -88,8 +88,8 @@ const ServicesSection = () => {
           className="text-center mb-20"
         >
           <h2 className="text-4xl md:text-6xl font-bold font-sora mb-6">
-            What We{' '}
-            <span className="gradient-text">Do</span>
+           Our{' '}
+            <span className="gradient-text">Strengths</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Comprehensive solutions that elevate your brand across every touchpoint

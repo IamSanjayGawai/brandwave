@@ -204,7 +204,7 @@ const OurWorkSection = () => {
       id: 28,
       title: "Office Branding",
       category: "Company Name",
-      tags: ["Branding"],
+      tags: "Branding",
       image: "/work/office-brand2.png",
     },
     {
@@ -230,16 +230,15 @@ const OurWorkSection = () => {
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
+   
           className="text-center mb-20"
         >
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            Our{" "}
-            <span className="bg-gradient-to-r from-red-500 to-pink-500 bg-clip-text text-transparent">
-              Work
+            Our
+            <span className="bg-gradient-to-r from-red-500 to-pink-500 bg-clip-text text-transparent mx-2">
+              Creative
             </span>
+            Bank
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Transforming brands through strategic design and innovative digital
@@ -250,13 +249,7 @@ const OurWorkSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <motion.div
-              key={project.id}
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={inView ? { opacity: 1, scale: 1 } : {}}
-              transition={{
-                duration: 0.6,
-                delay: Math.min(index * 0.01, 1.5), // Cap the delay to prevent too long delays
-              }}
+      
               whileHover={{ y: -10, scale: 1.02 }}
               className="group relative cursor-pointer"
               onClick={() =>
@@ -265,9 +258,9 @@ const OurWorkSection = () => {
                 )
               }
             >
-              <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 hover:border-red-500 transition-all duration-500 h-96">
+              <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 hover:border-gray-500 transition-all duration-500 h-96">
                 {/* Project Image */}
-                <div className="absolute inset-x-0 top-0 w-full h-60 bg-gradient-to-r from-gray-700 to-gray-600 flex items-center justify-center overflow-hidden">
+                <div className="absolute inset-x-0 top-0 w-full h-70 bg-gradient-to-r from-gray-700 to-gray-600 flex items-center justify-center overflow-hidden">
                   <img
                     src={project.image}
                     alt={project.title}
@@ -282,50 +275,47 @@ const OurWorkSection = () => {
                       `;
                     }}
                   />
+                </div>
 
-                  {/* Overlay on Hover */}
-                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
-                    <motion.div
-                      initial={{ scale: 0 }}
-                      whileHover={{ scale: 1 }}
-                      transition={{ duration: 0.3 }}
-                      className="w-16 h-16  rounded-full flex items-center justify-center"
-                    >
-                      <span className="text-white font-bold text-sm">VIEW</span>
-                    </motion.div>
-                  </div>
+                {/* Overlay on Hover */}
+                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                  <motion.div
+                    initial={{ scale: 0 }}
+                    whileHover={{ scale: 1 }}
+                    transition={{ duration: 0.3 }}
+                    className="w-16 h-16 rounded-full flex items-center justify-center"
+                  >
+                    <span className="text-white font-bold text-sm">VIEW</span>
+                  </motion.div>
                 </div>
 
                 {/* Project Content */}
                 <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-gray-900 to-transparent">
                   <div className="space-y-3">
-                    {/* <div className="text-sm text-red-500 font-semibold">
-                      {project.category}
-                    </div> */}
                     <h3 className="text-xl font-bold text-white">
                       {project.title}
                     </h3>
-
-                    {/* Tags */}
                     <div className="flex flex-wrap gap-2">
-                      {project.tags.map((tag, tagIndex) => (
-                        <span
-                          key={tagIndex}
-                          className="text-xs px-2 py-1 bg-gray-700 text-gray-300 rounded-full"
-                        >
-                          {tag}
-                        </span>
-                      ))}
+                      {Array.isArray(project.tags)
+                        ? project.tags.map((tag, tagIndex) => (
+                            <span
+                              key={tagIndex}
+                              className="text-xs px-2 py-1 bg-gray-700 text-gray-300 rounded-full"
+                            >
+                              {tag}
+                            </span>
+                          ))
+                        : <span className="text-xs px-2 py-1 bg-gray-700 text-gray-300 rounded-full">
+                            {project.tags}
+                          </span>
+                      }
                     </div>
                   </div>
                 </div>
 
                 {/* Hover Glow Effect */}
-                {/*  i dont want red color on hiver and afetr hovering this iamge should be more clear not darker */}
-
-                <div className="absolute -inset-1 bg-gradient-to-r  rounded-2xl  opacity-0 group-hover:opacity-20 transition duration-500" />
+                <div className="absolute -inset-1 bg-gradient-to-r from-white to-gray-300 rounded-2xl opacity-0 group-hover:opacity-10 transition duration-500" />
               </div>
-
             </motion.div>
           ))}
         </div>

@@ -95,13 +95,10 @@ const WhoWeAreSection = () => {
                 <div className="text-sm text-gray-400">Brands Transformed</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-brandwave-red font-sora">15+</div>
+                <div className="text-3xl font-bold text-brandwave-red font-sora">8+</div>
                 <div className="text-sm text-gray-400">Years Experience</div>
               </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-brandwave-red font-sora">25+</div>
-                <div className="text-sm text-gray-400">Awards Won</div>
-              </div>
+  
             </motion.div>
           </motion.div>
 
