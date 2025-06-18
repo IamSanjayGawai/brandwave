@@ -3,6 +3,19 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+
+
+
+const translations = [
+  { before: 'हम', after: 'के लिए काम करते हैं' }, // Hindi
+  { before: 'आपण', after: 'साठी काम करतो' },      // Marathi
+  { before: 'We work for', after: '' },            // English
+  { before: 'અમે', after: 'માટે કામ કરીએ છીએ' }, // Gujarati
+  { before: 'நாங்கள்', after: 'காக வேலை செய்கிறோம்' }, // Tamil
+  { before: 'ನಾವು', after: 'ಗಾಗಿ ಕೆಲಸ ಮಾಡುತ್ತೇವೆ' },  // Kannada
+];
+
 
 const HeroSection = () => {
   const { ref, inView } = useInView({
@@ -23,6 +36,17 @@ const HeroSection = () => {
       },
     },
   };
+
+const [index, setIndex] = useState(0);
+  const { before, after } = translations[index];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % translations.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
+  
 
   return (
     <section ref={ref} className="relative min-h-screen flex items-center justify-center overflow-hidden wave-bg">
@@ -65,14 +89,24 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="space-y-8"
         >
-          <motion.h1
+          {/* <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-4xl md:text-6xl lg:text-7xl font-bold font-sora leading-tight"
           >
             Hum <span className="gradient-text">Logo</span> ke Liye Kaam Karte Hai
-          </motion.h1>
+          </motion.h1> */}
+
+   <motion.h1
+      key={index}
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, delay: 0.2 }}
+      className="text-4xl md:text-6xl lg:text-7xl font-bold font-sora leading-tight text-center"
+    >
+      {before} <span className="gradient-text">LOGO</span> {after}
+    </motion.h1>
           
           <motion.p
             initial={{ opacity: 0, y: 20 }}
