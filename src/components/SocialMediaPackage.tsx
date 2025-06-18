@@ -75,15 +75,15 @@ const SocialMediaPackage = () => {
               <p className="text-center text-lg font-extrabold lg:text-xl mb-8 text-red-500">
                 Exclusive Social Media Packages
               </p>
-          <div className="text-center mb-8">
-                <span className="bg-black text-white px-8 py-4 rounded-full text-2xl lg:text-3xl font-bold inline-block">
-                  DIGI SUITE
-                </span>
-                <span className="bg-gray-800 text-white px-6 py-2 rounded-full text-lg ml-4 inline-block">
-                  180 DAYS
-                </span>
-              </div>
-    
+       <div className="text-center mb-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center sm:gap-6">
+  <span className="bg-black text-white px-8 py-4 rounded-full text-2xl lg:text-3xl font-bold">
+    DIGI SUITE
+  </span>
+  <span className="bg-gray-800 text-white px-6 py-2 rounded-full text-sm lg:text-lg">
+    180 DAYS
+  </span>
+</div>
+
 
               {/* Services Table */}
               <div className="bg-white/10 rounded-2xl overflow-hidden backdrop-blur-sm">
