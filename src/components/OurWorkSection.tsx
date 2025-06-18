@@ -299,9 +299,9 @@ const OurWorkSection = () => {
                 {/* Project Content */}
                 <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-gray-900 to-transparent">
                   <div className="space-y-3">
-                    <div className="text-sm text-red-500 font-semibold">
+                    {/* <div className="text-sm text-red-500 font-semibold">
                       {project.category}
-                    </div>
+                    </div> */}
                     <h3 className="text-xl font-bold text-white">
                       {project.title}
                     </h3>
@@ -326,30 +326,6 @@ const OurWorkSection = () => {
                 <div className="absolute -inset-1 bg-gradient-to-r  rounded-2xl  opacity-0 group-hover:opacity-20 transition duration-500" />
               </div>
 
-              {/* Expanded Description */}
-              <motion.div
-                initial={{ height: 0, opacity: 0 }}
-                animate={{
-                  height: selectedProject === project.id ? "auto" : 0,
-                  opacity: selectedProject === project.id ? 1 : 0,
-                }}
-                transition={{ duration: 0.4, ease: "easeInOut" }}
-                className="overflow-hidden mt-4"
-              >
-                <div className="p-6 bg-gray-800 rounded-xl border border-gray-700">
-                  <p className="text-gray-300 mb-4">
-                    Detailed project description and case study information
-                    would go here.
-                  </p>
-                  <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="px-6 py-2 bg-red-500 text-white rounded-full text-sm font-semibold hover:bg-red-600 transition-colors duration-200"
-                  >
-                    View Case Study
-                  </motion.button>
-                </div>
-              </motion.div>
             </motion.div>
           ))}
         </div>
